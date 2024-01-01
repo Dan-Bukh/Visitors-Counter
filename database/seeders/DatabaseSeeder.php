@@ -31,15 +31,15 @@ class DatabaseSeeder extends Seeder
             ]);
         };
 
-        // for($i = 0; $i < 30; $i++) {
-        //     $randUser = rand(0, 9). rand(0, 9). rand(0, 9). rand(0, 9). rand(0, 9);
-        //     User::create([
-        //         'email' => $randUser. '@example.com',
-        //         'email_verified_at' => now(),
-        //         'password' => Hash::make($randUser),
-        //         'created_at' => now(),
-        //         'updated_at' => now(),
-        //     ]);
-        //}
+        for($i = 0; $i < 5; $i++) {
+            $randUser = rand(0, 9). rand(0, 9). rand(0, 9). rand(0, 9). rand(0, 9);
+            User::create([
+                'email' => $randUser. '@example.com',
+                'email_verified_at' => now(),
+                'password' => Hash::make($randUser),
+                'created_at' => now(),
+                'updated_at' => now(),
+            ]);
+        }
     }
 }
